@@ -1,4 +1,26 @@
-{
+{// docusaurus.config.js
+module.exports = {
+  title: "Docs",
+  url: "https://tholm650.github.io",
+  baseUrl: "/Tyler-Holm-Take-Home/",
+  organizationName: "tholm650",
+  projectName: "Tyler-Holm-Take-Home",
+
+  presets: [
+    [
+      "classic",
+      {
+        docs: {
+          sidebarPath: require.resolve("./sidebars.js"),
+          // editUrl: "https://github.com/tholm650/Tyler-Holm-Take-Home/edit/main/",
+        },
+        theme: {
+          customCss: require.resolve("./src/css/custom.css"),
+        },
+      },
+    ],
+  ],
+};
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "Mint Starter Kit",
